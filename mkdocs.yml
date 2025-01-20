@@ -1,0 +1,39 @@
+site_name: VersaTiles Documentation
+site_url: https://stefanhuber.github.io/versatiles-documentation/
+theme:
+  name: material
+  language: en
+  features:
+    - navigation.tabs
+docs_dir: content
+site_dir: docs
+nav:
+  - Home: index.md
+  - Basics:
+    - 'Web Maps': basics/web_maps.md
+    - 'Versatiles': basics/versatiles.md
+    - 'Versatiles Server': basics/versatiles_server.md
+    - 'Frontend': basics/frontend.md    
+  - Compendium:
+    - Overview: compendium/index.md
+    - Introduction: compendium/introduction.md
+    - 'VersaTiles Layer Specification': compendium/specification_reference_model.md
+    - 'VersaTiles Container Specification': compendium/specification_container.md
+    - 'VersaTiles Frontend Specification': compendium/specification_frontend.md
+    - 'Show Cases using VersaTiles': compendium/show_cases.md
+    - 'Tools using VersaTiles': compendium/tools.md
+    - 'A wider perspective on VersaTiles': compendium/wider_perspective.md
+  - Guides:
+    - 'Deploy in Google Cloud': guides/deploy_in_google_cloud.md
+    - 'Deploy on Debian': guides/deploy_on_debian.md
+markdown_extensions:
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
